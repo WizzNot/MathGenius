@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/testbutton"
+        android:layout_width="274dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:text="Тест"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/listnumbers"
+        android:layout_width="281dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="124dp"
+        android:text="Действия с набором чисел"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testbutton" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="116dp"
+        android:text="Решить пример или уравнение"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listnumbers" />
+
+    <Button
+        android:id="@+id/sinbutton"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Посчитать"
+        app:layout_constraintStart_toEndOf="@+id/sinin"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <EditText
+        android:id="@+id/sinin"
+        android:layout_width="177dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="sin/cos/tg"
+        android:inputType="number|textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <TextView
+        android:id="@+id/sinout"
+        android:layout_width="226dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Вводите значение в градусах"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sinin" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/listtext"
+        android:layout_width="285dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="72dp"
+        android:text="Введите набор чисел через запятую"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/listedittxt"
+        android:layout_width="281dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Набор чисел через запятую"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listtext" />
+
+    <Button
+        android:id="@+id/listbut"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listedittxt" />
+
+    <Button
+        android:id="@+id/backlistbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

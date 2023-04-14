@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backasnwerbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answertextview"
+        android:layout_width="209dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:text="Введите пример или уравнение степени не выше 2."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/answerin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        android:hint="Введите пример или уравнение"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answertextview" />
+
+    <Button
+        android:id="@+id/answerb"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="@android:string/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerin" />
+</android.support.constraint.ConstraintLayout>
